@@ -1,0 +1,14 @@
+/* eslint-disable import/prefer-default-export */
+export const AUTHCONSTANTS = {
+  LOGIN_REQUEST: 'LOGIN_REQUEST',
+  LOGIN: 'LOGIN',
+  LOGIN_ERROR: 'LOGIN_ERROR',
+  LOGOUT: 'LOGOUT'
+};
+
+export const USERCONSTANTS = {
+  SET_LOADING: 'SET_LOADING',
+  SET_ALERT: 'SET_ALERT',
+  COMP_LOAD: 'COMP_LOAD',
+  UPDATE_BREADCRUMB: 'UPDATE_BREADCRUMB',
+};
