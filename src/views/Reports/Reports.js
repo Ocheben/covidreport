@@ -4,15 +4,17 @@ import Plot from 'react-plotly.js';
 import {
   Fab, Icon
 } from '@material-ui/core';
+import firebase from 'firebase/app';
 import { CloudUploadOutlined } from '@material-ui/icons';
 import { SText, Content } from '../../components';
 import DataTable from '../../components/Tables/DataTable';
 // import { vendorList } from './mockData';
 import AddReport from './AddReport';
 import Upload from './Upload';
-import { firestore as db } from '../../_services';
+// import { firestore as db } from '../../_services';
 import { setAlert } from '../../_store/actions';
 
+const db = firebase.firestore();
 
 const groupColumns = [
   { columnName: '#', keyName: 'sn' },

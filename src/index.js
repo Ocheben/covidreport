@@ -7,12 +7,19 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import { PersistGate } from 'redux-persist/integration/react';
+import firebase from 'firebase/app';
+import { firebaseConfig } from './_services';
 import App from './App';
 // import reducer from './reducers/reducer';
 import rootReducer from './_store/reducers';
 import 'babel-polyfill';
 
+require('firebase/auth');
+require('firebase/firestore');
+
+
 // firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 const persistConfig = {
   key: 'root',
   storage,

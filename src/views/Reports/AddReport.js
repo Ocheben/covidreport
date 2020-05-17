@@ -9,13 +9,13 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
+import firebase from 'firebase/app';
 import {
   Content, Input, StyledButton, SText
 } from '../../components';
-import { firestore } from '../../_services';
 import { setAlert } from '../../_store/actions';
 
-const db = firestore;
+const db = firebase.firestore();
 
 const styles = theme => ({
   root: {
